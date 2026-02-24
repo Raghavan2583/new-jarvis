@@ -37,8 +37,8 @@ graph TD
     User -->|Paste & Run| ClaudeCode[Claude Code AI]
     ClaudeCode -->|Writes Code| Draft[New Code]
     Draft -->|Run Tests & Verification| InternalTest{Checklist & Tests Pass?}
- ```
 
     InternalTest -->|YES| Success[Proceed to Next Task]
     InternalTest -->|NO / Gap| Feedback[Knowledge Loop: Update Tarviz]
     Feedback --> Tarviz
+```
